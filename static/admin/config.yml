@@ -5,7 +5,7 @@ media_folder: static/images/uploads
 public_folder: /images
 collections:
   - name: "student" # Used in routes, e.g., /admin/collections/blog
-    label: "Student" # Used in the UI
+    label: "Roster Card" # Used in the UI
     folder: "_students" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -13,7 +13,7 @@ collections:
       - {label: "Roster Card Builder", name: "roster", widget: "hidden", default: "card"}
       - {label: "Name", name: "name", widget: "string", required: true}
       - {label: "Tagline", name: "tagline", widget: "string", required: true}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", allow_multiple: "false", default: "/uploads/default-avatar.jpg"}
+      - {label: "Featured Image", name: "avatar", widget: "image", allow_multiple: "false", default: "/uploads/default-avatar.jpg"}
       - label: "Social Media"
         name: "socials"
         widget: "list"
@@ -44,3 +44,10 @@ collections:
             name: "body-font"
             widget: "select"
             options: ["Open Sans"]       
+# Hidden Fields
+      - {label: "MVP", name: "mvp", widget: "hidden", default: false}
+      - {label: "Coach of the Year", name: "coach", widget: "hidden", default: false}
+      - {label: "Special Teams", name: "teams", widget: "hidden", default: false}
+      - {label: "Perfect Attendance", name: "attendance", widget: "hidden", default: false}
+      - {label: "Code Warrior", name: "warrior", widget: "hidden", default: false}
+      - {label: "Early Riser", name: "riser", widget: "hidden", default: false}   
