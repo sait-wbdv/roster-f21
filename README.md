@@ -1,5 +1,9 @@
 # roster-f21
 
+## TODO LIST
+- [ ] find a default avatar image
+- [ ] find a set of default cool fonts
+- [ ] add fonts to admin panel
 ## Build Setup
 
 ```bash

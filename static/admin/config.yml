@@ -1,13 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: static/images/uploads
+public_folder: /images
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
+  - name: "student" # Used in routes, e.g., /admin/collections/blog
+    label: "Student" # Used in the UI
+    folder: "_students" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "card"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Tagline", name: "tagline", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", allow_multiple: "false", default: "/uploads/default-avatar.jpg"}
+      - label: "Social Media"
+        name: "socials"
+        widget: "list"
+        fields: 
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Github", name: "github", widget: "string"}
+          - {label: "Codepen", name: "codepen", widget: "string"}
+          - {label: "LinkedIn", name: "linkedin", widget: "string"}
+          - {label: "Twitter", name: "twitter", widget: "string"}
+          - {label: "Youtube", name: "youtube", widget: "string"}
+          - {label: "Facebook", name: "facebook", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
+      - label: "Colour Theme"
+        name: "colors"
+        widget: "list"
+        fields:
+          - {label: "Primary Color", name: "primary", widget:"color", enableAlpha: "true"}
+          - {label: "Secondary Color", name: "secondary", widget:"color", enableAlpha: "true"}
+      - label: "Fonts"
+        name: "fonts"
+        widget: "list" 
+        fields:
+          - label: "Title Font"
+            name: "title-font"
+            widget: "select"
+            options: ["Raleway"]
+          - label: "Body Font"
+            name: "body-font"
+            widget: "select"
+            options: ["Open Sans"]       
