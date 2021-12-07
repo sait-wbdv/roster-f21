@@ -4,6 +4,8 @@
 - [ ] find a default avatar image
 - [ ] find a set of default cool fonts
 - [ ] add fonts to admin panel
+- [ ] decide to pull default colors from cms, or to declare them in the template
+  - lilyx-note: If declared in the cms, there will be less code in the template, if declared in the template, we will need to use a conditional to set up a default color. 
 ## Build Setup
 
 ```bash
