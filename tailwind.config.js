@@ -239,9 +239,9 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      body: ['Open Sans', 'sans-serif'],
       title: ['Raleway', 'sans-serif'],
       sans: [
+        'Open Sans',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
