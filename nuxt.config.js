@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'roster-w21',
+    title: 'SAIT WBDV Fall 2021 Roster',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,6 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/static/assets/css/tailwind.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -32,12 +33,27 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://google-fonts.nuxtjs.org/
+    '@nuxtjs/google-fonts',
+    // https://image.nuxtjs.org/
+    '@nuxt/image',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
-
+  googleFonts: {
+    families: {
+      'Open+Sans': {
+        wght: [300, 400, 600]
+      },
+      Raleway: {
+        wght: [300, 400, 600]
+      }
+    }
+  },  
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://google-fonts.nuxtjs.org/
+    '@nuxt/content'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
