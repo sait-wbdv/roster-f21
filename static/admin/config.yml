@@ -3,7 +3,7 @@ backend:
   branch: main
 
 # Changes CMS entries from a push to a pull request
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 media_folder: static/images/uploads
 public_folder: /images

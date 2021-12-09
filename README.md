@@ -1,7 +1,8 @@
 # roster-f21
 
 ## TODO LIST
-- [ ] Create Instructor Admin
+- [ ] Set up Editorial Workflow
+- [ ] Discuss creating custom widget for the hidden content [see this doc](https://www.netlifycms.org/docs/custom-widgets/)
 - [ ] Verify if we need to use [netlify identity widget](https://github.com/netlify/netlify-identity-widget)
 - [ ] find a default avatar image
 - [ ] find a set of default cool fonts
