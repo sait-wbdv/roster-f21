@@ -1,8 +1,13 @@
 backend:
   name: git-gateway
   branch: main
+
+# Changes CMS entries from a push to a pull request
+publish_mode: editorial_workflow
+
 media_folder: static/images/uploads
 public_folder: /images
+
 collections:
   - name: "student" # Used in routes, e.g., /admin/collections/blog
     label: "Roster Card" # Used in the UI
@@ -10,31 +15,54 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Roster Card Builder", name: "roster", widget: "hidden", default: "card"}
-      - {label: "Name", name: "name", widget: "string", required: true}
-      - {label: "Tagline", name: "tagline", widget: "string", required: true}
-      - {label: "Featured Image", name: "avatar", widget: "image", allow_multiple: "false", default: "/uploads/default-avatar.jpg"}
+      - {
+          label: "Roster Card Builder",
+          name: "roster",
+          widget: "hidden",
+          default: "card",
+        }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Tagline", name: "tagline", widget: "string", required: true }
+      - {
+          label: "Featured Image",
+          name: "avatar",
+          widget: "image",
+          allow_multiple: false,
+          default: "/uploads/default-avatar.jpg",
+        }
       - label: "Social Media"
         name: "socials"
         widget: "list"
-        fields: 
-          - {label: "Email", name: "email", widget: "string"}
-          - {label: "Github", name: "github", widget: "string"}
-          - {label: "Codepen", name: "codepen", widget: "string"}
-          - {label: "LinkedIn", name: "linkedin", widget: "string"}
-          - {label: "Twitter", name: "twitter", widget: "string"}
-          - {label: "Youtube", name: "youtube", widget: "string"}
-          - {label: "Facebook", name: "facebook", widget: "string"}
-          - {label: "Instagram", name: "instagram", widget: "string"}
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Github", name: "github", widget: "string" }
+          - { label: "Codepen", name: "codepen", widget: "string" }
+          - { label: "LinkedIn", name: "linkedin", widget: "string" }
+          - { label: "Twitter", name: "twitter", widget: "string" }
+          - { label: "Youtube", name: "youtube", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
       - label: "Colour Theme"
         name: "colors"
         widget: "list"
         fields:
-          - {label: "Primary Color", name: "primary", widget:"color", enableAlpha: "true", default: "#0063a7"}
-          - {label: "Secondary Color", name: "secondary", widget:"color", enableAlpha: "true", default: "#e12726"}
+          - {
+              label: "Primary Color",
+              name: "primary",
+              widget:"color",
+              enableAlpha: "true",
+              default: "#0063a7",
+            }
+          - {
+              label: "Secondary Color",
+              name: "secondary",
+              widget:"color",
+              enableAlpha: "true",
+              default: "#e12726",
+            }
       - label: "Fonts"
         name: "fonts"
-        widget: "list" 
+        widget: "list"
         fields:
           - label: "Title Font"
             name: "title-font"
@@ -43,11 +71,36 @@ collections:
           - label: "Body Font"
             name: "body-font"
             widget: "select"
-            options: ["Open Sans"]       
-# Hidden Fields
-      - {label: "MVP", name: "mvp", widget: "hidden", default: false}
-      - {label: "Coach of the Year", name: "coach", widget: "hidden", default: false}
-      - {label: "Special Teams", name: "teams", widget: "hidden", default: false}
-      - {label: "Perfect Attendance", name: "attendance", widget: "hidden", default: false}
-      - {label: "Code Warrior", name: "warrior", widget: "hidden", default: false}
-      - {label: "Early Riser", name: "riser", widget: "hidden", default: false}   
+            options: ["Open Sans"]
+      # Hidden Fields
+      - { label: "MVP", name: "mvp", widget: "hidden", default: false }
+      - {
+          label: "Coach of the Year",
+          name: "coach",
+          widget: "hidden",
+          default: false,
+        }
+      - {
+          label: "Special Teams",
+          name: "teams",
+          widget: "hidden",
+          default: false,
+        }
+      - {
+          label: "Perfect Attendance",
+          name: "attendance",
+          widget: "hidden",
+          default: false,
+        }
+      - {
+          label: "Code Warrior",
+          name: "warrior",
+          widget: "hidden",
+          default: false,
+        }
+      - {
+          label: "Early Riser",
+          name: "riser",
+          widget: "hidden",
+          default: false,
+        }
