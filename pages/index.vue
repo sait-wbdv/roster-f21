@@ -1,7 +1,13 @@
 <template>
   <div>
-    <h1>Roster</h1>
-    <Card />
+    <main>
+      <header>
+        <h1>Roster</h1>
+      </header>
+      <div v-for="student in students" :key="student.id">
+        <Card :person="student" />
+      </div>
+    </main>
   </div>
 </template>
 
