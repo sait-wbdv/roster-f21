@@ -1,10 +1,10 @@
 <template>
-<div>
-  <h1>Roster</h1>
-  <Card />
-</div>
+  <div>
+    <h1>Roster</h1>
+    <Card />
+  </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
