@@ -1,7 +1,7 @@
 <template>
-  <figure>
+  <article>
     <nuxt-img :src="person.image" />
-    <figcaption>
+    <div>
       <h3>{{ person.name }}</h3>
       <p>{{ person.tagline }}</p>
       <ul>
@@ -9,8 +9,8 @@
           <a :href="social.link" v-html="social.label"></a>
         </li>
       </ul>
-    </figcaption>
-  </figure>
+    </div>
+  </article>
 </template>
 <script>
 export default {
