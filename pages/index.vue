@@ -12,5 +12,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  async asyncData({ $content, params }) {
+    const students = await $content("roster").fetch();
+
+    return {
+      students,
+    };
+  },
+};
 </script>

@@ -1,8 +1,7 @@
 <template>
   <article>
-    <nuxt-img :src="person.image" />
     <div>
-      <h3>{{ person.name }}</h3>
+      <h3>{{ person.label }}</h3>
       <p>{{ person.tagline }}</p>
       <ul>
         <li v-for="social in person.socials" :key="social.id">
