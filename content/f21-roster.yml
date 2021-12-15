@@ -18,11 +18,15 @@
     - label: email
       link: 
 - label: Fesal Badday
-  tagline: 
-  avatar: 
+  tagline: Junior Web Developer – Go JavaScript || Go Home
+  avatar: fesal.webp
   links:
     - label: github
       link: https://github.com/FesalBadday
+    - label: codepen
+      link: https://codepen.io/Fesal
+    - label: linkedin
+      link: https://www.linkedin.com/in/fesal-badday-701347172
   badges:
     - name: mvp
 - label: Christopher Barber
@@ -30,12 +34,12 @@
   avatar: 
   links:
     - label: github
-      link: https://github.com/Chriztoph3
+      link: https://github.com/13retonnian
     - label: gab
       link: https://gab.com/13arber
 - label: Evan Burton
-  tagline: 
-  avatar: 
+  tagline: I'll sleep when I'm dead. I GUESS. Interested in UX/UI.
+  avatar: evan.jpg
   links:
     - label: github
       link: https://github.com/Rankorrdagod
@@ -89,12 +93,18 @@
       link: https://github.com/aeoyu
   badges:
     - name: 
-- label: Icah V
-  tagline: 
-  avatar: 
+- label: Icah Vega
+  tagline: Web developer, dog mom and hiker-ish.
+  avatar: icah.jpg
   links:
     - label: github
       link: https://github.com/Icahpv
+    - label: email
+      link: Icah.doherty.vega@gmail.com
+    - label: linkedin
+      link: https://www.linkedin.com/in/icahpv/
+    - label: instagram
+      link: https://www.instagram.com/icedvega/
   badges:
     - name: plus-one
 - label: Jessica W
