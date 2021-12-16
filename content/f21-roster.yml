@@ -108,10 +108,14 @@
   badges:
     - name: plus-one
 - label: Jessica W
-  tagline: 
+  tagline: Mother, Cook, Web Dev Lover
   avatar: 
   links:
     - label: github
       link: https://github.com/Enyorose
+    - label: linkedin
+      link: https://www.linkedin.com/in/jessica-watson-540024107/
+    - label: email
+      link: jessica.watson1@live.com
   badges:
     - name: coach
