@@ -1,14 +1,14 @@
-- label: Alex An
-  tagline: 
-  avatar:
+- label: Alex - Byung Uk An
+  tagline: I'm exploring the world and looking for something great.
+  avatar: alex.png
   homepage: 
   links:
     - label: github
-      link: https://github.com/longlive1211
+      link: https://github.com/byung1211
     - label: codepen
       link: 
     - label: linkedin
-      link: 
+      link: https://www.linkedin.com/in/alexan1211/
     - label: facebook
       link: 
     - label: instagram
@@ -63,10 +63,15 @@
     - name: 
 - label: David Ha
   tagline: 
-  avatar: 
+  avatar:
+  homepage: https://davidha.net
   links:
     - label: github
       link: https://github.com/boostha
+    - label: linkedin
+      link: https://www.linkedin.com/in/davidha0908/
+    - label: email
+      link: dev@davidha.net
   badges:
     - name: 
 - label: Raj Hunjan
@@ -85,12 +90,26 @@
       link: https://github.com/Nephy1
   badges:
     - name: plus-one
+- label: Mysia Santana
+  tagline: Yesterday a Nurse, Today a Web Developer.
+  avatar: mysia.jpg
+  links:
+    - label: github
+      link: https://github.com/Mysia14
+    - label: codepen
+      link: https://codepen.io/mysia14
+    - label: linkedin
+      link: https://www.linkedin.com/in/mysiasantana/
 - label: Filora
-  tagline: 
-  avatar: 
+  tagline: Lots on my mind, design is one
+  avatar: filora.jpeg
   links:
     - label: github
       link: https://github.com/aeoyu
+    - label: email
+      link: filoraa@outlook.com
+    - label: codepen
+      link: https://codepen.io/aeoyu
   badges:
     - name: 
 - label: Icah Vega
@@ -108,10 +127,14 @@
   badges:
     - name: plus-one
 - label: Jessica W
-  tagline: 
+  tagline: Mother, Cook, Web Dev Lover
   avatar: 
   links:
     - label: github
       link: https://github.com/Enyorose
+    - label: linkedin
+      link: https://www.linkedin.com/in/jessica-watson-540024107/
+    - label: email
+      link: jessica.watson1@live.com
   badges:
     - name: coach
