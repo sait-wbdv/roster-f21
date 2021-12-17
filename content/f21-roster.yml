@@ -1,7 +1,6 @@
 - label: Alex - Byung Uk An
   tagline: I'm exploring the world and looking for something great.
   avatar: alex.png
-  homepage: 
   links:
     - label: github
       link: https://github.com/byung1211
@@ -39,7 +38,7 @@
     - name: early-riser
 - label: Christopher Barber
   tagline: What's a pirate's favourite letter? Ye think it be the R but it be the C.
-  avatar: 
+  avatar: chris.jpg
   links:
     - label: github
       link: https://github.com/13retonnian
@@ -60,8 +59,9 @@
 - label: Lucas Cummings
   tagline: If your brain says this isn't for you, prove it wrong
   avatar: lucas.jpg
-  homepage: https://www.lucascummingsofficial.ca/
   links:
+    - label: homepage
+      link: https://www.lucascummingsofficial.ca/
     - label: github
       link: https://github.com/lucas-cq
     - label: linkedin
@@ -71,9 +71,10 @@
     - name: attendance
 - label: David Ha
   tagline: 
-  avatar:
-  homepage: https://davidha.net
+  avatar: david.jpg
   links:
+    - label: homepage
+      link: https://davidha.net
     - label: github
       link: https://github.com/boostha
     - label: linkedin
@@ -85,9 +86,8 @@
     - name: code-warrior
     - name: early-riser
 - label: Hyeju Hong
-  tagline: 
-  avatar: homepage
-  homepage: 
+  tagline: Better latte than never
+  avatar: hyeju.jpg
   links: 
     - label: github
       link: https://github.com/Hyeju1996
@@ -102,11 +102,15 @@
     - name: attendance
     - name: early-riser
 - label: Raj Hunjan
-  tagline: 
+  tagline: Roses are red violets are blue unexpected '{' on line 32
   avatar: raj.jpg
   links:
     - label: github
       link: https://github.com/Raj-Hunjan
+    - label: linkedin
+      link: https://www.linkedin.com/in/raj-hunjan-79b080228/
+    - label: codepen
+      link: https://codepen.io/rajhunjann
   badges:
     - name: plus-one
     - name: attendance
